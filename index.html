@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Share Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ヒーローセクション -->
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome</h1>
+            <p>素材や完成品の物置です</p>
+            <button class="explore-btn" id="explore-btn" aria-label="Explore more options">Explore More</button>
+        </div>
+    </div>
+
+    <!-- シェアセクション -->
+    <div class="share-section">
+        <h2>ここからシェアできます</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Script Sharing</h3>
+                <p>Share your scripts and collaborate seamlessly with others.</p>
+                <button class="action-btn" aria-label="Upload script">Upload Script</button>
+            </div>
+            <div class="card">
+                <h3>Screenshot Gallery</h3>
+                <p>Upload and explore screenshots with our community.</p>
+                <button class="action-btn" aria-label="Upload screenshot">Upload Screenshot</button>
+            </div>
+            <div class="card">
+                <h3>Download Resources</h3>
+                <p>Access a variety of shared resources from our library.</p>
+                <button class="action-btn" aria-label="Explore resources">Explore Resources</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 新しいボックスセクション -->
+    <div class="hidden-boxes" id="hidden-boxes">
+        <div class="box">
+            <h3>New Feature 1</h3>
+            <p>説明文1をここに記載します。</p>
+            <button class="box-btn" aria-label="Explore feature 1">Explore Feature 1</button>
+        </div>
+        <div class="box">
+            <h3>New Feature 2</h3>
+            <p>説明文2をここに記載します。</p>
+            <button class="box-btn" aria-label="Explore feature 2">Explore Feature 2</button>
+        </div>
+        <div class="box">
+            <h3>New Feature 3</h3>
+            <p>説明文3をここに記載します。</p>
+            <button class="box-btn" aria-label="Explore feature 3">Explore Feature 3</button>
+        </div>
+    </div>
+
+    <!-- メールセクション -->
+    <div class="email-section">
+        <h2>Send Email</h2>
+        <form>
+            <input type="email" placeholder="Enter your email" required aria-label="Email address">
+            <textarea placeholder="Your message" rows="4" required aria-label="Message"></textarea>
+            <button type="submit" class="action-btn" aria-label="Send email">Send</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>copyright © 2025 試作場1</p>
+    </footer>
+
+    <script src="interactive.js"></script>
+</body>
+</html>
