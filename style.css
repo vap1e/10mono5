@@ -1,0 +1,243 @@
+/* ======== 全体の基本スタイル (bodyの定義を統一) ======== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1e;
+    color: #fff;
+    text-align: center;
+}
+
+/* ======= パスワード入力画面 ======= */
+.password-screen {
+    position: absolute;  /* 絶対配置 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* 中央に移動 */
+    background: linear-gradient(145deg, #333, #222);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+}
+
+.password-screen h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.password-screen p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #aaa;
+}
+
+.password-input-container {
+    margin-bottom: 20px;
+}
+
+#password-input {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+#password-input:focus {
+    border: 1px solid #4caf50;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+/* ボタン */
+.action-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+/* ======== メインコンテンツ (bodyの中央寄せを解除) ======== */
+#main-content {
+    display: none; /* 初期状態で非表示 */
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* ======== メールセクション ======== */
+.email-section {
+    padding: 50px 20px;
+    background-color: #1e1e1e;
+    margin-top: 50px; /* 上の要素との間隔を確保 */
+    text-align: center;
+}
+
+.email-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* 修正後のフォームデザイン */
+.email-section input, .email-section textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.email-section button {
+    width: 150px;
+}
+
+/* ======== Heroセクション ======== */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* ボタン */
+.action-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+/* エラーメッセージ */
+#error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    height: 20px;
+}
+
+/* メインコンテンツ */
+#main-content {
+    text-align: center;
+    padding: 20px;
+}
+
+/* 全体スタイル */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+}
+
+/* Heroセクション */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.explore-btn {
+    background-color: #444;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #666;
+    transform: scale(1.1);
+}
+
+/* シェアセクション */
+.share-section {
+    padding: 50px 20px;
+    background-color: #1e1e1e;
+}
+
+.share-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* カード */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* スマホ対応でカードが折り返されるように */
+}
+
+.card {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
